@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 04 - Forms & Inputs</title>
 </head>
-
 <body>
 
     <h1>User Registration Form</h1>
-    
-        <div>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required minlength="3">
-        </div>
 
-        <div>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+    <form action="#" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
 
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required minlength="6">
-        </div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-        <div>
-            <fieldset>
-                <legend>Gender:</legend>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
 
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-            </fieldset>
-        </div>
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
 
-        <div>
-            <label for="country">Country:</label>
-            <select id="country" name="country" required>
-                <option value="">--Please choose an option--</option>
-                <option value="jo">Jordan</option>
-                <option value="us">United States</option>
-                <option value="uk">United Kingdom</option>
-            </select>
-        </div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Please choose an option--</option>
+            <option value="jo">Jordan</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+        </select>
 
-        <div>
-            <label for="bio">Biography / Comments:</label>
-            <textarea id="bio" name="bio" rows="4" cols="30" minlength="10"></textarea>
-        </div>
+        <label for="bio">Biography / Comments:</label>
+        <textarea id="bio" name="bio" rows="4" cols="30" minlength="10"></textarea>
 
-        <div>
-            <input type="checkbox" id="agreement" name="agreement" required>
-            <label for="agreement">I agree to the terms and conditions</label>
-        </div>
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I agree to the terms and conditions</label>
 
-        <div>
-            <button type="submit">Register</button>
-        </div>
+        <button type="submit">Register</button>
     </form>
 
 </body>
-
 </html>
